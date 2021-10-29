@@ -1,7 +1,6 @@
 body {
     background-color: whitesmoke;
     border: 2px solid black;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     padding: 5px;
     margin: 10px;
 }
@@ -27,11 +26,11 @@ body {
 
 .fm,
 nav {
-    max-width: 100%;
+    align-self: center;
+    max-width: 50%;
     height: auto;
     padding: 25px;
     background-color: blanchedalmond;
-    font-variant: small-caps;
     text-align: left;
     border: 5px solid silver;
 }
@@ -42,7 +41,6 @@ p {
 
 input,
 button {
-    font-variant-caps: petite-caps;
     text-align: center;
     font-size: larger;
 }
@@ -63,12 +61,15 @@ button {
 }
 
 li {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
     font-weight: bold;
     padding: 20px;
 }
 
 div {
     padding: 30px;
+}
+
+.form-center {
+    display: flexbox;
+    justify-content: center;
 }

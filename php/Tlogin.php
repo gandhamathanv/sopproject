@@ -8,7 +8,7 @@ $result = mysqli_query($conn, $sql);
 $count = mysqli_num_rows($result);
 
 if ($count == 1) {
-    header('listview.php');
+    header('Location: ../teacherchoice.html');
 } else {
     echo "failed";
 }
