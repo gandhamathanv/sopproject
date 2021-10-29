@@ -3,11 +3,20 @@ body {
     border: 2px solid black;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     padding: 5px;
-    margin: 10;
+    margin: 10px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
 }
 
 .clg {
     text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .tit {
@@ -16,7 +25,8 @@ body {
     font-variant-caps: all-petite-caps;
 }
 
-#fm {
+.fm,
+nav {
     max-width: 100%;
     height: auto;
     padding: 25px;
@@ -37,7 +47,7 @@ button {
     font-size: larger;
 }
 
-#fm h1 {
+.fm h1 {
     text-align: center;
     color: seagreen;
 }
@@ -46,4 +56,19 @@ button {
     max-width: 100%;
     height: auto;
     width: 100%;
+}
+
+.list {
+    list-style-type: none;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+}
+
+div {
+    padding: 30px;
 }
