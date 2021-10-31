@@ -1,6 +1,12 @@
 <?php
 include 'connection.php';
-$result = mysqli_query($conn, "SELECT * FROM events;");
+session_start();
+$roll = $_SESSION['rollnumber'];
+$res = mysqli_query($conn, "SELECT * FROM events WHERE rollnumber='$roll';");
+if (mysqli_error($conn)) {
+    echo 'error';
+}
+
 mysqli_close($conn);
 
 
@@ -22,21 +28,17 @@ mysqli_close($conn);
     <button onclick="goBack()">Go Back</button>
     <table align="center" border="2px">
         <tr>
-            <th colspan="2">participation list</th>
+            <th colspan="2">EVENT PARTICIPATED </th>
         </tr>
         <tr>
-
-            <th>rollnumber</th>
             <th>EVENT NAME</th>
             <th>DATE</th>
             <th>PROOF</th>
             <th>VERIFIED</th>
-
         </tr>
         <?php
-        while ($rows = mysqli_fetch_assoc($result)) { ?>
+        while ($rows = mysqli_fetch_assoc($res)) { ?>
         <tr>
-            <td><?php echo $rows['rollnumber']; ?></td>
             <td>
                 <?php echo $rows['eventname']; ?>
             </td>
@@ -49,6 +51,8 @@ mysqli_close($conn);
             <td>
                 <?php echo $rows['verified']; ?>
             </td>
+
+
         </tr>
         <?php      }
         ?>

@@ -27,7 +27,7 @@ body {
 .fm,
 nav {
     align-self: center;
-    max-width: 50%;
+    max-width: 98%;
     height: auto;
     padding: 25px;
     background-color: blanchedalmond;
@@ -72,4 +72,8 @@ div {
 .form-center {
     display: flexbox;
     justify-content: center;
+}
+
+.fm {
+    margin: 10px auto;
 }

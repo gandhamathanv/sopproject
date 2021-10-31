@@ -17,9 +17,19 @@
 
         </div>
         <div>
-            <input type="button" name="b1" value="list" onclick="location.href='listview.html'">
+            <input type="button" name="b1" value="list" onclick="location.href='listview.php'">
         </div>
     </nav>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+    </script>
 
 </body>
 

@@ -11,6 +11,8 @@
 
 <body>
     <img src="img1.png" alt="kongu image" class="im" />
+    <button onclick="logout()">logout</button>
+    <button onclick="goBack()">Go Back</button>
     <p class="clg">
         Enter the consigutive details
     </p>
@@ -33,6 +35,15 @@
         </ul>
 
     </form>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+    </script>
 
 </body>
 

@@ -11,15 +11,28 @@
 
 <body>
     <img src="img1.png" alt="kongu image" class="im" />
+    <button onclick="logout()">logout</button>
+    <button onclick="goBack()">Go Back</button>
     <nav>
         <div>
-            <input type="button" name="b1" value="events participated" onclick="location.href='seperate.html'">
+            <input type="button" name="b1" value="events participated" onclick="location.href='eventsparticipated.php'">
 
         </div>
         <div>
             <input type="button" name="b1" value="add an event" onclick="location.href='eventssubmit.html'">
         </div>
     </nav>
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+    </script>
 
 </body>
 
